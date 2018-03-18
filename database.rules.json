@@ -1,0 +1,37 @@
+{
+  "rules": {
+    "cities": {
+      ".read": "true",
+      ".write": "true"
+    },
+    "places": {
+      ".read": "true",
+      ".write": "true",
+      "$place": {
+        ".read": "true",
+        ".write": "true"
+      }
+    },
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "notifications":{
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "true"
+      }
+    },
+    "visitors": {
+      "$place": {
+        ".read": "true",
+        "$visitorKey": {
+          ".read": "true",
+          ".write": "true"
+        }
+      }
+    }
+  }
+}

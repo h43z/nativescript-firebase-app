@@ -1,0 +1,75 @@
+
+.avatar-mini{
+  width: 40;
+  height: 40;
+  stretch: aspectFit;
+  border-radius: 50%;
+}
+
+.city-indicator{
+  text-transform: capitalize;
+  font-size: 16;
+  vertical-align: center;
+  color: #2c3e50;
+}
+
+.container{
+  border-width:3;
+  border-radius:10%;
+  border-color:rgba(41, 128, 185,0.12);
+  background-color:rgba(41, 128, 185,0.12);
+  margin-left: 10;
+  height: 33;
+  padding: 0 10 0 10;
+}
+
+.fas-icon{
+  margin-right:3; 
+  font-size:13;
+  font-family: 'fa-solid-900';
+  vertical-align: center;
+}
+
+.place-indicator{
+  font-size: 14;
+  vertical-align: center;
+  text-align:left;
+  color: #2c3e50;
+  width: 100%;
+}
+
+.places{
+  background-color:#3498db;
+  separator-color:transparent;
+}
+
+.place{
+  min-height: 90;
+  margin: 5 7 0 7;
+  background-color: white;
+  padding: 10;
+  border-width: 8;
+  border-color: rgba(189, 195, 199, 0.12);
+}
+
+.place-name{
+  font-size: 21;
+  vertical-align:top;
+  color:#34495e;
+  padding: 10;
+  horizontal-align:left;
+  font-weight: bold;
+}
+
+.fas-arrow{
+  font-family: 'fa-solid-900';
+  font-size: 21;
+  vertical-align:center;
+  text-align: right;
+  margin-right: 15;
+  color:rgba(41, 128, 185,0.3);
+}
+
+.activity{
+  height: 20;
+}

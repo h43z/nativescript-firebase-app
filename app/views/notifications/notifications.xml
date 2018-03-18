@@ -1,0 +1,30 @@
+<Page xmlns:IC='nativescript-image-cache' xmlns='http://schemas.nativescript.org/tns.xsd' navigatingFrom='onNavigatingFrom' navigatedTo='navigatedTo'>
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <StackLayout horizontalAlignment='left' orientation='horizontal'>
+          <Label class='actionbar-icon' text="&#xf0f3;"/>
+          <Label class='actionbar-text' text='Notifications'/>
+        </StackLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+
+    <ListView row='0' items='{{ notifications }}' class='visitors' itemTap='itemTap'>
+      <ListView.itemTemplate>
+        <StackLayout>
+          <GridLayout rows='*' columns='auto, *' class='visitor'>
+            <IC:NSImage col='0' class='visitor-image' src='{{ profileUrl }}' rounded='true'></IC:NSImage> 
+            <StackLayout col='1' orientation='vertical'> 
+              <Label class='{{"visitor-status hi hi-" + type}}' text='{{ text }}'></Label>  
+              <FlexboxLayout class='container' horizontalAlignment='left'>
+                <Label class='fas-icon' text='&#xf1fa;'/>
+                <Label class='place-indicator' textWrap='true' text='{{ place }}' tap='goToPlace'/> 
+              </FlexboxLayout>
+            </StackLayout>
+          </GridLayout>
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+
+  </Page>

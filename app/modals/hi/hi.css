@@ -1,0 +1,28 @@
+.hi{
+  font-family: 'fa-solid-900';
+  text-align:center;
+  padding: 15;
+  font-size: 30;
+  background-color: white;
+  background-color:rgba(41, 128, 185,0.04);
+}
+
+.image{
+  stretch:aspectFill;
+  height:320;
+  width:320;
+}
+
+.hi-0{
+  color:#3498db;
+}
+
+.hi-1{
+  color:#9b59b6;
+}
+.hi-2{
+  color:#f39c12;
+}
+.hi-3{
+  color:#f1c40f;
+}

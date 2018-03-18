@@ -1,0 +1,54 @@
+<Page xmlns:IC='nativescript-image-cache' xmlns='http://schemas.nativescript.org/tns.xsd' navigatingFrom='onNavigatingFrom' loaded='onLoaded' unloaded='onUnloaded'>
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <StackLayout horizontalAlignment='left' orientation='horizontal'>
+          <Label class='actionbar-icon' text="&#xf21d;"/>
+          <Label class='actionbar-text' text='{{ place }}'/>
+        </StackLayout>
+      </ActionBar.titleView>
+      <ActionBar.actionItems>
+        <ActionItem>
+          <ActionItem.actionView >
+            <StackLayout orientation='horizontal'> 
+              <Label class='{{ notification ? "fas-notify-new" : "far-notify" }}' text='&#xf0f3;' tap='goToNotifications'/>
+            </StackLayout>
+          </ActionItem.actionView>
+        </ActionItem>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+
+  <GridLayout rows='*, auto'>
+    <ListView row='0' id='listview' items='{{ visitors }}' class='visitors' itemTap='itemTap' itemTemplateSelector='itemTemplateSelector'>
+      <ListView.itemTemplates>
+        <template key='me'>
+          <StackLayout>
+            <GridLayout rows='*' columns='auto, *' class='visitor me'>
+              <IC:NSImage row='0' class='visitor-image' src='{{ image }}' rounded='true'></IC:NSImage> 
+              <Label row='0' col='1' class='visitor-status' text='{{ description }}'></Label>  
+            </GridLayout>
+          </StackLayout>
+        </template>
+
+        <template key='other'>
+          <StackLayout>
+            <GridLayout rows='*' columns='auto, *' class='visitor'>
+              <IC:NSImage row='0' class='visitor-image' src='{{ image }}' rounded='true'></IC:NSImage> 
+              <Label row='0' col='1' class='visitor-status' text='{{ description }}'></Label>  
+            </GridLayout>
+          </StackLayout>
+        </template>
+
+      </ListView.itemTemplates>
+    </ListView>
+    <StackLayout row='1'>
+      <StackLayout visibility='{{ currentPlace != place ? "visible" : "collapse" }}'>
+        <Button class='stay-button join' text='enter' tap='stay'/>
+      </StackLayout>
+      <StackLayout visibility='{{ currentPlace  == place ? "visible" : "collapse" }}'>
+        <Button class='stay-button leave' text='leave' tap='stay'/>
+      </StackLayout>
+    </StackLayout>
+  </GridLayout>
+</Page>

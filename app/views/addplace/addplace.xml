@@ -1,0 +1,27 @@
+<Page loaded='loaded'>
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <StackLayout horizontalAlignment='left' orientation='horizontal'>
+          <Label class='actionbar-icon' text="&#xf21d;"/>
+          <Label class='actionbar-text' text='Create a place'/>
+        </StackLayout>
+      </ActionBar.titleView>
+      <ActionBar.actionItems>
+        <ActionItem>
+          <ActionItem.actionView >
+            <StackLayout>
+              <StackLayout class='container-add' visibility='{{ name.length == 0 ? "collapsed" : "visible" }}' >
+                <Label class='add' text="&#xf067;" tap='goToPlace'/>
+              </StackLayout>
+            </StackLayout>
+          </ActionItem.actionView>
+        </ActionItem>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+
+  <StackLayout class='container-name'>
+    <TextView hint='Where are you?' maxLength='30' id='text' class='name' text='{{ name }}'></TextView>
+  </StackLayout>
+</Page>

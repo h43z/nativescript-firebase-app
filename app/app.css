@@ -1,0 +1,68 @@
+﻿ActionBar{
+  background-color: white;
+  color: #3498db;
+  padding-left: 15;
+}
+
+.notify{
+ font-size: 20;
+}
+
+.floating-add{
+  font-size: 40;
+  font-family: 'fa-solid-900';
+  horizontal-align:center;
+  vertical-align:center;
+  margin-top: 14;
+  color: white;
+}
+
+.floating-container{
+  margin: 18;
+  background-color: #34495e;
+  border-radius: 50%;
+  width: 80;
+  height: 80;
+  border-width:6;
+  border-color: #ecf0f1;
+  opacity: 0.8;
+}
+
+.fas{
+  font-family: 'fa-solid-900';
+  vertical-align: center;
+}
+
+.far{
+  font-family: 'fa-regular-400';
+  vertical-align: center;
+}
+
+.fas-notify-new{
+  font-family: 'fa-solid-900';
+  vertical-align: center;
+  text-align:center;
+  color: #f39c12;
+  font-size: 20;
+  padding: 15;
+}
+
+.far-notify{
+  font-family: 'fa-regular-400';
+  vertical-align: center;
+  text-align:center;
+  color: #f39c12;
+  color: #3498db;
+  font-size: 20;
+  padding: 15;
+}
+
+.place {
+  font-size: 25;
+  padding: 20;
+}
+
+.currentPlace{
+  vertical-align: center;
+  font-size: 16;
+}

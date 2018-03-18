@@ -1,0 +1,56 @@
+Page{
+  background-color:#ecf0f1;
+  background-color:#3498db;
+}
+
+.status{
+  margin: 40;
+  padding: 20;
+  white-space:normal;
+  font-size: 14;
+  vertical-align: center;
+  border-radius: 10;
+  background-color:#ecf0f1;
+  line-height: 1;
+  color: #2c3e50;
+}
+
+.actionbar-icon{
+  font-size: 20;
+  font-family: 'fa-solid-900';
+  margin-right: 10;
+  vertical-align:center;
+}
+
+.actionbar-text{
+  text-wrap: true;
+  font-size: 21;
+  vertical-align: center;
+  color: #2c3e50;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.image{
+  border-radius:100%;
+  width: 200;
+  height: 200;
+  vertical-align: top;
+  stretch: aspectFit;
+  border-width:6;
+  border-color:rgba(41, 128, 185,0.12);
+  border-color: rgba(236, 240, 241,0.5);
+}
+
+.container{
+  top: 150;
+  left: 140;
+  background-color: white;
+  border-radius: 50%;
+  color: rgba(44, 62, 80,1.0);
+}
+
+.activity{
+  horizontal-align:center;
+  vertical-align:center;
+}

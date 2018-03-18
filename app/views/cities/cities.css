@@ -1,0 +1,41 @@
+Page{
+  background-color: #3498db;
+}
+.actionbar-icon{
+  font-size: 20;
+  font-family: 'fa-solid-900';
+  margin-right: 10;
+  vertical-align:center;
+}
+
+.actionbar-text{
+  text-wrap: true;
+  font-size: 21;
+  vertical-align: center;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.city-name{
+  text-transform: capitalize;
+  color: #34495e;
+  font-size: 21;
+  color:#34495e;
+  padding-left: 15;
+  font-weight: bold;
+}
+
+.fas-arrow{
+  font-family: 'fa-solid-900';
+  font-size: 21;
+  vertical-align:center;
+  text-align: right;
+  margin-right: 15;
+  color:rgba(41, 128, 185,0.3);
+}
+
+.place{
+  background-color: white;
+  font-size: 25;
+  padding: 20;
+}

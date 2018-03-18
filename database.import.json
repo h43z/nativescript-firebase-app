@@ -1,0 +1,70 @@
+{
+  "cities": {
+    "berlin": true,
+    "vienna": true,
+    "bern": true
+  },
+  "places" : {
+    "demo": {
+      "Demo Place 😱": true
+    },
+    "berlin" : {
+      "City Library 📚" : {
+        "position": 1
+      },
+      "Biergarten 🍺" : {
+        "position": 2
+      },
+      "Beffa Bar 🎉" : {
+        "position": 3
+      },
+      "Club Half Moon 💃" : {
+        "position": 4
+      },
+      "Shamrock Irish Pub 🍀" : {
+        "position": 5
+      },
+      "Times Bar 🍸" : {
+        "position": 6
+      }
+    },
+    "vienna": {
+      "Loco Bar 👯" : {
+        "position": 2
+      },
+      "Praterstern 🎡" : {
+        "position": 1
+      }
+    }
+  },
+  "visitors" : {
+    "demo": {
+      "Demo Place 😱": {
+        "1" : {
+          "description" : "Hey! I'm new in town and love it so far!",
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo1.jpeg?alt=media&token=da9770a7-c553-476d-ba41-0299114bd06f"
+        },
+        "2": {
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo2.jpeg?alt=media&token=b0d8aec5-14f9-4c6c-ac04-a877924d1f7c",
+          "description" : "You wanna dance 💃?. Studying contemporary composition"
+        },
+        "3": {
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo3.jpeg?alt=media&token=3109c538-8c98-4371-bf3f-006f51ce78a3",
+          "description" : "Im washing Me And My Clothes, Bitch, im washing Me And My Clothes."
+        },
+        "4": {
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo4.jpeg?alt=media&token=485e1873-c70e-4d18-bef0-ad6b37c6fa04",
+          "description" : "gym rat, podcast addict, chess freak"
+        },
+        "5": {
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo5.jpg?alt=media&token=80125cb3-2ee9-49d3-a8ed-bdcbc3303379",
+          "description" : "Art historian, good sleeper. phytocurious. pro planning the escape."
+        },
+        "6": {
+          "image" : "https://firebasestorage.googleapis.com/v0/b/nativescript-firebase-testapp.appspot.com/o/images%2Fuploads%2Fdemo6.jpeg?alt=media&token=9e3cfe51-653d-483c-b4be-ba0da539bd19",
+          "description" : "I can show you some wicked magic tricks ✨"
+        }
+      }
+    }
+  }
+}

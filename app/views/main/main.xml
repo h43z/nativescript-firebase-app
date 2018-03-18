@@ -1,0 +1,52 @@
+<Page xmlns:IC='nativescript-image-cache' xmlns='http://schemas.nativescript.org/tns.xsd' navigatedTo='onNavigatedTo'>
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+
+        <GridLayout columns='auto, auto' horizontalAlignment='left'>
+          <IC:NSImage col='0' class='avatar-mini' tap='goToProfile' src='{{ profileUrl }}' rounded='true'></IC:NSImage> 
+          <GridLayout col='1' columns='auto, auto' class='container' visibility='{{ place ? "collapse" : "visible" }}' tap='goToCities'>
+            <Label col='0' class='fas-icon' text='&#xf3c5;' />
+            <Label col='1' id='city-label' class='city-indicator' textWrap='true' text='{{ city }}'/>
+            <ActivityIndicator col='1' busy='{{ geoLocating }}' class='activity' visibility='{{ geoLocating ? "visible" : "hidden"}}'></ActivityIndicator>
+          </GridLayout>
+          <GridLayout col='1' columns='auto, auto' class='container' visibility='{{ place ? "visible" : "collapse" }}'>
+            <Label col='0' class='fas-icon' text='&#xf1fa;'/>
+            <Label col='1' id='place-label' class='place-indicator' textWrap='true' text='{{ place }}' tap='goToPlace'/>
+          </GridLayout>
+        </GridLayout>
+      </ActionBar.titleView>
+
+      <ActionBar.actionItems>
+        <ActionItem>
+          <ActionItem.actionView >
+            <StackLayout> 
+              <Label class='{{ notification ? "fas-notify-new" : "far-notify" }}' text='&#xf0f3;' tap='goToNotifications'/>
+            </StackLayout>
+          </ActionItem.actionView>
+        </ActionItem>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+
+  <GridLayout rows='*'>
+    <ListView row='0' items='{{ places }}' itemTap='join' class='places' itemTemplateSelector='itemTemplateSelector'>
+      <ListView.itemTemplates>
+        <template key="verified">
+          <StackLayout>
+            <GridLayout columns='*, auto' class='place'>
+              <Label col='0' class='place-name' textWrap='true' text='{{ name }}'/>
+              <Label col='1' class='fas-arrow' text='&#xf105;'/>
+            </GridLayout>
+          </StackLayout>
+        </template>
+      </ListView.itemTemplates>
+    </ListView>
+
+    <AbsoluteLayout verticalAlignment='bottom' horizontalAlignment='right'>
+      <StackLayout class='floating-container' >
+        <Label class='floating-add' text="&#xf067;" tap='goToAddPlace'/>
+      </StackLayout>
+    </AbsoluteLayout>
+  </GridLayout>
+</Page>

@@ -1,0 +1,86 @@
+ActionBar{
+  background-color: white;
+  color: #3498db;
+  padding-left: 15;
+}
+
+Page{
+  background-color:#3498db;
+}
+
+ListView {
+  separator-color: transparent;
+}
+
+.visitor{
+  min-height: 150;
+  margin: 5 7 0 7;
+  background-color: white;
+  padding: 10;
+  border-width: 8;
+  border-color: rgba(189, 195, 199, 0.12);
+}
+
+.visitor-image{
+  border-radius:100%;
+  width: 130;
+  height: 130;
+  vertical-align: top;
+  stretch: aspectFit;
+  border-width:6;
+  border-color:rgba(41, 128, 185,0.12);
+}
+
+.visitor-status{
+  margin: 10;
+  padding: 10;
+  white-space:normal;
+  font-size: 14;
+  vertical-align: center;
+  border-radius: 10;
+  background-color:#ecf0f1;
+  line-height: 1;
+  color: #2c3e50;
+}
+
+.visitors{
+  background-color:#3498db;
+}
+
+.stay-button{
+  font-size: 19;
+  letter-spacing: 0.2;
+  vertical-align:center;
+  height: 70;
+  color: white;
+  font-weight: bold;
+}
+
+.join{
+  background-color:#2ecc71;
+}
+
+.leave{
+  background-color:#1abc9c;
+}
+
+.actionbar-icon{
+  font-size: 20;
+  font-family: 'fa-solid-900';
+  margin-right: 10;
+  vertical-align:center;
+}
+
+.actionbar-text{
+  text-wrap: true;
+  font-size: 21;
+  vertical-align: center;
+  color: #2c3e50;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.me{
+  border-color: rgba(189, 195, 199, 0.6);
+  border-color: rgba(243, 156, 18,0.4);
+}

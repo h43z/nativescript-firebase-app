@@ -1,0 +1,55 @@
+Page{
+  background-color:#3498db;
+}
+
+.name {
+  margin: 20;
+  padding: 20;
+  background-color: white;
+  font-size: 23;
+  color: #2c3e50;
+  border-width: 8;
+  border-color: rgba(189, 195, 199, 0.12);
+  height: 90;
+  font-weight: bold;
+}
+
+.container-add{
+  background-color: #34495e;
+  border-radius: 50%;
+  width: 40;
+  height: 40;
+  border-width:6;
+  border-color: #ecf0f1;
+  opacity: 0.8;
+  margin-right: 10;
+}
+
+.container-name{
+  margin-top: 20;
+}
+
+.add{
+  font-size: 20;
+  font-family: 'fa-solid-900';
+  horizontal-align:center;
+  vertical-align:center;
+  text-align:center;
+  margin-top: 3;
+  color: white;
+}
+
+.actionbar-icon{
+  font-size: 20;
+  font-family: 'fa-solid-900';
+  margin-right: 10;
+  vertical-align:center;
+}
+.actionbar-text{
+  text-wrap: true;
+  font-size: 21;
+  vertical-align: center;
+  color: #2c3e50;
+  color: #3498db;
+  font-weight: bold;
+}

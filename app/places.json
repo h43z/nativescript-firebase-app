@@ -1,0 +1,12 @@
+{
+  "users": true,
+  "places": {
+    "salzburg": {
+      "shamrock": true,
+      "beffa": true,
+      "halfmoon": true,
+      "flip": true
+    }
+  },
+  "visitors": true
+}

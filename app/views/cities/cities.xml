@@ -1,0 +1,29 @@
+<Page xmlns:IC='nativescript-image-cache' navigatedTo='onNavigatedTo' navigatingFrom='onNavigatingFrom' xmlns='http://schemas.nativescript.org/tns.xsd'> 
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <StackLayout horizontalAlignment='left' orientation='horizontal'>
+          <Label class='actionbar-icon' text="&#xf3c5;"/>
+          <Label class='actionbar-text' text='City'/>
+        </StackLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+
+  <GridLayout rows='*'>
+    <ListView row='0' items='{{ cities }}' itemTap='visit'>
+      <ListView.itemTemplate>
+        <GridLayout columns='*, auto' class='place'>
+          <Label col='0' class='city-name' textWrap='true' text='{{ $value }}'/>
+          <Label col='1' class='fas-arrow' text='&#xf105;'/>
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+
+    <!--
+    <AbsoluteLayout horizontalAlignment='right' verticalAlignment='bottom'>
+      <Label text="&#xf055;" class='fas' margin='20' fontSize='60' tap='goToAddPlace'/>
+    </AbsoluteLayout>
+    -->
+  </GridLayout>
+</Page>

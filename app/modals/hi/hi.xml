@@ -1,0 +1,11 @@
+<Page xmlns:IC='nativescript-image-cache' shownModally="shownModally" xmlns='http://schemas.nativescript.org/tns.xsd'> 
+  <GridLayout rows='auto, auto'>
+    <IC:NSImage row='0' class='image' src='{{ visitor.image }}'></IC:NSImage>  
+    <GridLayout row='1' columns='*,*,*,*' margin='10'>
+      <Button class='hi hi-0' col='0' text="&#xf164;" tap='notify'/>
+      <Button class='hi hi-1' col='1' text="&#xf005;" tap='notify'/>
+      <Button class='hi hi-2' col='2' text="&#xf118;" tap='notify'/>
+      <Button class='hi hi-3' col='3' text="&#xf0fc;" tap='notify'/>
+    </GridLayout>
+  </GridLayout>
+</Page>

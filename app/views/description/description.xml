@@ -1,0 +1,17 @@
+<Page loaded='loaded'>
+  <Page.actionBar>
+    <ActionBar title='Status'>
+      <ActionBar.actionItems>
+        <ActionItem>
+          <ActionItem.actionView>
+            <Label fontSize='25' text="&#xf1d8;" class='fas' padding='10' tap='save'/>
+          </ActionItem.actionView>
+        </ActionItem>
+      </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+
+  <StackLayout>
+    <TextView maxLength='200' hint="Hi I'm new here :)" id='text' class='description' textWrap='true' text='{{ description }}'></TextView>
+  </StackLayout>
+</Page>

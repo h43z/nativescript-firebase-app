@@ -1,0 +1,25 @@
+<Page xmlns:IC='nativescript-image-cache' xmlns='http://schemas.nativescript.org/tns.xsd' loaded='loaded'>
+  <Page.actionBar>
+    <ActionBar>
+      <ActionBar.titleView>
+        <StackLayout horizontalAlignment='left' orientation='horizontal'>
+          <Label class='actionbar-icon' text="&#xf2bd;"/>
+          <Label class='actionbar-text' text='Profile'/>
+        </StackLayout>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+
+  <GridLayout rows='200, auto' marginTop='30'>
+    <ActivityIndicator row='0' busy='{{ isLoading }}' class='activity' visibility='{{ isLoading ? "visible" : "hidden"}}'></ActivityIndicator> 
+
+    <AbsoluteLayout row='0' horizontalAlignment='center'>
+      <IC:NSImage class='image' visibility='{{ isLoading ? "hidden" : "visible"}}' src='{{ image }}' rounded='true'></IC:NSImage>  
+      <StackLayout class='container'>
+        <Label padding='10' text="&#xf083;" class='fas' fontSize='28' tap='chooseImage'/>
+      </StackLayout>
+    </AbsoluteLayout>
+
+    <TextView row='1' hint="Hi I'm new here :)" editable='false' class='status' textWrap='true' text='{{ description }}' tap='goToEditDescription'/>
+  </GridLayout>
+</Page>
